@@ -1,0 +1,86 @@
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1128px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-counter {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.sl-wrapper .sl-close {
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/close.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+.sl-wrapper .sl-navigation .sl-prev,
+.sl-wrapper .sl-navigation .sl-next {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sl-wrapper .sl-prev {
+  background-image: url('../img/left.svg');
+}
+
+.sl-wrapper .sl-next {
+  background-image: url('../img/right.svg');
+}
